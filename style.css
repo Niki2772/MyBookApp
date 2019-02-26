@@ -1,0 +1,554 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/svg/icomoon.eot?yr8i3i');
+    src: url('fonts/svg/icomoon.eot?yr8i3i#iefix') format('embedded-opentype'), url('fonts/svg/icomoon.ttf?yr8i3i') format('truetype'), url('fonts/svg/icomoon.woff?yr8i3i') format('woff'), url('fonts/svg/icomoon.svg?yr8i3i#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+    content: "\e90a";
+}
+
+.icon-question:before {
+    content: "\e902";
+}
+
+.icon-plus:before {
+    content: "\e900";
+}
+
+.icon-settings:before {
+    content: "\e901";
+}
+
+.icon-search:before {
+    content: "\e903";
+}
+
+.icon-book:before {
+    content: "\e904";
+}
+
+.icon-time:before {
+    content: "\e905";
+}
+
+.icon-list:before {
+    content: "\e906";
+}
+
+.icon-buy:before {
+    content: "\e907";
+}
+
+.icon-globe:before {
+    content: "\e908";
+}
+
+.icon-star:before {
+    content: "\e909";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+
+.line {
+    height: 45px;
+    line-height: 45px;
+    font-size: 13px;
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    border-radius: 3px 3px 0 0;
+    background-color: #2f364a;
+}
+
+.brand-name {
+    padding-left: 20px;
+    color: #78829d;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header-nav li {
+    float: left;
+    list-style: none;
+    padding: 0 18px 0 15px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #78829d;
+}
+
+.user {
+    color: #fff;
+    width: 160px;
+    background-color: #15a4fa;
+    display: flex;
+    border-radius: 0 3px 0 0;
+}
+
+.profile-photo {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 6px 12px;
+    background-image: url('images/user-avatar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.icon-arrow-down {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #15a4fa;
+    font-size: 11px;
+    margin-left: 16px;
+}
+
+.icon-arrow-down:hover {
+    cursor: pointer;
+    background-color: #15a4fa;
+    color: #fff;
+}
+
+.header-nav a:hover {
+    border-bottom: 1px solid #78829d;
+    cursor: pointer;
+}
+
+/*sidebar*/
+
+/*form*/
+
+.add-file {
+    height: 114px;
+    background-color: #1f2637;
+    border-bottom: 1px solid #141824;
+    margin-bottom: 4px;
+}
+
+.input-file+label {
+    margin: 35px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    width: 160px;
+    background-color: #f2795a;
+    line-height: 45px;
+    height: 45px;
+    outline: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.icon-plus {
+    font-size: 11px;
+    padding-right: 18px;
+}
+
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.input-file+label:hover {
+    cursor: pointer;
+    background-color: #ef603b;
+}
+
+/*sidebar*/
+
+.sidebar-menu {
+    width: 200px;
+    height: 900px;
+    background-color: #19202e;
+}
+
+.sidebar-item {
+    margin-bottom: 4px;
+    border-bottom: 1px solid #141824;
+    border-top: 1px solid #282f41;
+    background-color: #1f2637;
+}
+
+.sidebar-navigation {
+    height: 242px;
+}
+
+.siderbar-categories {
+    height: 183px;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-item:first-child {
+    border-top: none;
+}
+
+.list-basic-set li {
+    height: 38px;
+    line-height: 38px;
+    width: 100%;
+    padding: 0;
+}
+
+.list-basic-set a {
+    text-decoration: none;
+    color: #78829d;
+    font-size: 13px;
+}
+
+.pd {
+    padding: 0 12px 0 21px;
+}
+
+.list-basic-set li:hover {
+    background-color: #15a4fa;
+    transition: .2s;
+}
+
+.list-basic-set li:hover a {
+    color: #fff;
+}
+
+.siderbar-categories {
+    padding-top: 16px;
+}
+
+.siderbar-categories img {
+    padding-right: 10px;
+    padding-left: 25px;
+}
+
+.user-history {
+    height: 360px;
+}
+
+.history {
+    width: 157px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    color: #6f7d95;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+}
+
+.history-wrap {
+    display: flex;
+}
+
+.history i {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+b {
+    color: #97b3ce;
+}
+
+.exact-time {
+    padding-left: 24px;
+    padding-top: 18px;
+}
+
+footer {
+    background-color: #181e2c;
+    border-radius: 0 0 3px 3px;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+.square {
+    width: 55px;
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.questions {
+    background-color: #1f2637;
+}
+
+.settings {
+    background-color: #15a4fa;
+    border-radius: 0 0 3px 0;
+}
+
+.questions:hover {
+    background-color: #1b2231;
+}
+
+.settings:hover {
+    background-color: #0597ee;
+}
+
+/*main*/
+
+.content {
+    display: flex;
+}
+
+.filter {
+    flex: 1;
+}
+
+.search-header {
+    height: 70px;
+    line-height: 70px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #444c63;
+}
+
+.bg {
+    border-bottom: 1px solid #dadfea;
+    background-color: #eef1f7;
+}
+
+.search-content {
+    height: 50px;
+    border-top: 1px solid #f4f6fa;
+    line-height: 50px;
+    display: flex;
+}
+
+.search-library {
+    float: left;
+}
+
+.search-library li {
+    float: left;
+    margin-right: 24px;
+}
+
+.search-library a {
+    font-size: 13px;
+    color: #8c97b2;
+    text-decoration: none;
+}
+
+.search-library a:hover {
+    border-bottom: 1px solid #8c97b2;
+}
+
+.search-library li:first-child:hover a {
+    background-color: #7885a5;
+    border-bottom: none;
+}
+
+.search-library li:first-child a {
+    background-color: #8c97b2;
+    color: #fff;
+    border-radius: 25px;
+    padding: 6px 12px;
+}
+
+form {
+    float: right;
+    position: relative;
+}
+
+.input-text {
+    width: 400px;
+    height: 32px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid #c7cddb;
+    padding-left: 18px;
+    box-sizing: border-box;
+    color: #8c97b2;
+}
+
+.submit-btn {
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border: none;
+    background-image: url("./images/search-img.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+/*shop*/
+.wrapper {
+    width: calc(100% - 40px);
+    left: auto;
+    right: auto;
+}
+.book-shop {
+    padding-top: 30px;
+    overflow-y: scroll;
+    height: 780px;
+}
+.book-shop-in {
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+}
+
+.book-info {
+    height: 360px;
+    width: 200px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+ 
+}
+.book-info:hover {
+    box-shadow: 0px 0px 10px 7px #dadfea;
+    cursor: pointer;
+    background-color: #dadfea;
+    
+}
+.name {
+    font-size: 16px;
+    color: #444c63;
+    padding: 17px 0 10px 0;
+}
+.author {
+    font-size: 12px;
+    color: #6f7d95;
+    padding-bottom: 14px;
+}
+.jq-star-svg {
+    height: 13px;
+    width: 13px;
+}
+.my-rating {
+   display: flex;
+   justify-content: flex-start;
+    height: 13px;
+    width: 70px;
+    cursor: pointer;
+}
+.book-cover {
+    height: 275px;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+.book-cover-jewels {
+    background-image: url("./images/jewels-of-nizam.png");
+} 
+.book-cover-cakes {
+    background-image: url("./images/cakes-and-bakes.png");
+}
+.book-cover-kitchen {
+    background-image: url("./images/jamie\'s-kitchen.png");
+}
+.book-cover-italian {
+    background-image: url("./images/cook-like-an-italien.png");
+}
+.book-cover-meals{
+    background-image: url("./images/easy-meals.png");
+}
+.book-cover-slow-cooking {
+    background-image: url("./images/slow-cooking.png");
+}
+.book-cover-vegetables {
+    background-image: url("./images/vegetables.png");
+}
+.book-cover-suneeta {
+    background-image: url("./images/indian-cooking.png");
+}
+.book-cover-jamie {
+    background-image: url("./images/jaimie-does.png");
+}
+.book-cover-jamie’s-italy {
+    background-image: url("./images/jamie\'s-italy.png");
+}

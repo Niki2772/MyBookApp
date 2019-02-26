@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyBookApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/star-rating-svg.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="">
+
+
+
+
+</head>
+
+<body>
+    <header class="line">
+        <a class="brand-name">
+            <i class="icon-book"></i>
+            MyBookApp
+        </a>
+        <nav class="header-nav">
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Our Support</a></li>
+        </nav>
+        <div class="user">
+            <div class="profile-photo"></div>
+            <div class="user-name">John Doe<i class="icon-arrow-down"></i></div>
+        </div>
+    </header>
+    <div class="content">
+        <aside class="sidebar-menu">
+            <div class="sidebar-item add-file">
+                <input type="file" name="file" id="file" class="input-file" />
+                <label for="file"> <i class="icon-plus"></i> Add a Book</label>
+            </div>
+            <nav class="sidebar-item sidebar-navigation list-basic-set">
+                <ul class="list-basic-set">
+                    <li><a href=""><i class="pd icon-book"></i>Now Reading</a></li>
+                    <li><a href=""><i class="pd icon-globe"></i>Browse</a></li>
+                    <li><a href=""><i class="pd icon-buy"></i>Buy Books</a></li>
+                    <li><a href=""><i class="pd icon-star"></i>Favourite Books</a></li>
+                    <li><a href=""><i class="pd icon-list"></i>Wishlist</a></li>
+                    <li><a href=""><i class="pd icon-time"></i>History</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar-item siderbar-categories">
+                <ul class="list-basic-set">
+                    <li><a href=""><img src="./images/list-marker-red.png"> Must Read Titles</a></li>
+                    <li><a href=""><img src="./images/list-marker-yellow.png"> Best Of List</a></li>
+                    <li><a href=""><img src="./images/list-marker-blue.png"> Classic Novels</a></li>
+                    <li><a href=""><img src="./images/list-marker-purple.png"> Non Fiction</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-item  user-history">
+                <div class="history">
+                    <div class="history-wrap">
+                        <i class="icon-time"></i>
+                        <div class="action">You added <b>Fight Club </b>by <b>Chuck Palahniuk </b>to your<b> Must Read
+                                Titles</b>.</div>
+                    </div>
+                    <div class="exact-time">24 minutes ago</div>
+                </div>
+
+                <div class="history">
+                    <div class="history-wrap">
+                        <i class="icon-time"></i>
+                        <div class="action">You added <b> The Trial </b>by <b>Franz Kafka </b>to your<b> Must Read
+                                Titles</b>.</div>
+                    </div>
+                    <div class="exact-time">48 minutes ago</div>
+                </div>
+
+            </div>
+        </aside>
+
+        <main class="filter">
+            <div class="bg search-header">
+                <div class="wrapper">
+                    <h1>Browse Available Books</h1>
+                </div>
+            </div>
+            <div class="bg search-content">
+                <div class="wrapper">
+                    <form action="">
+                        <input type="text" placeholder="Enter Keywords" class="input-text">
+                        <input type="submit" class="submit-btn" value="">
+                    </form>
+                    <nav class="search-library">
+                        <ul>
+                            <li><a href="">All Books</a></li>
+                            <li><a href="">Most Recent</a></li>
+                            <li><a href="">Most Recent</a></li>
+                            <li><a href="">Free Books</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <div class="book-shop">
+                <div class="wrapper">
+                    <div class="book-shop-in">
+                        <div class="book-info">
+                            <div class="book-cover book-cover-jewels"></div>
+                            <div class="name">Jewels of Nizam</div>
+                            <div class="author">by Geeta Devi</div>
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-cover book-cover-cakes"></div>
+                            <div class="name">Cakes & Bakes</div>
+                            <div class="author">by Sanjeev Kapoor</div>
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-cover book-cover-kitchen"></div>
+                            <div class="name">Jemie's Kitchen</div>
+                            <div class="author">by Jamie Oliver</div>
+                            <div class="my-rating"></div>
+                        </div>
+
+                        <div class="book-info">
+                            <div class="book-cover book-cover-meals"></div>
+                            <div class="name">Inexpensive Family Meals</div>
+                            <div class="author">by Simon Holst</div>
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-cover book-cover-slow-cooking"></div>
+                            <div class="name">Paleo Slow Cooking</div>
+                            <div class="author">by Chrissy Gover</div>
+                            <div class="my-rating"></div>
+                        </div>
+                    </div>
+                    <div class="book-shop-in">
+                        <div class="book-info">
+                            <div class="book-cover book-cover-italian"></div>
+                            <div class="name">Cook Like an Italian</div>
+                            <div class="author">by Tobie Puttock</div>
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-cover book-cover-suneeta"></div>
+                            <div class="name">Suneeta Vaswani</div>
+                            <div class="author">by Geeta Devi</div>
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-cover book-cover-jamie"></div>
+                            <div class="name">Jamie Does</div>
+                            <div class="author">by Jamie Oliver</div>
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-cover book-cover-jamie’s-italy"></div>
+                            <div class="name">Jamie’s italy</div>
+                            <div class="author">by Jamie Oliver</div>
+                            <div class="my-rating"></div>
+                        </div>
+                        <div class="book-info">
+                            <div class="book-cover book-cover-vegetables"></div>
+                            <div class="name">Vegetables Cookbook</div>
+                            <div class="author">by Matthew Biggs</div>
+                            <div class="my-rating"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="line" class="relative">
+        <div class="square questions"><i class="icon-question"></i> </div>
+        <div class="square settings"><i class="icon-settings"></i> </div>
+    </footer>
+
+
+</body>
+
+</html>
