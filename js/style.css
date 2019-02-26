@@ -37,8 +37,8 @@ table {
 
 @font-face {
     font-family: 'icomoon';
-    src: url('fonts/svg/icomoon.eot?yr8i3i');
-    src: url('fonts/svg/icomoon.eot?yr8i3i#iefix') format('embedded-opentype'), url('fonts/svg/icomoon.ttf?yr8i3i') format('truetype'), url('fonts/svg/icomoon.woff?yr8i3i') format('woff'), url('fonts/svg/icomoon.svg?yr8i3i#icomoon') format('svg');
+    src: url('./fonts/svg/icomoon.eot?yr8i3i');
+    src: url('./fonts/svg/icomoon.eot?yr8i3i#iefix') format('embedded-opentype'), url('fonts/svg/icomoon.ttf?yr8i3i') format('truetype'), url('fonts/svg/icomoon.woff?yr8i3i') format('woff'), url('fonts/svg/icomoon.svg?yr8i3i#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -185,7 +185,7 @@ body {
     border: 1px solid #fff;
     border-radius: 50%;
     margin: 6px 12px;
-    background-image: url('images/user-avatar.jpg');
+    background-image: url("./images/user-avatar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -435,32 +435,28 @@ h1 {
 
 .search-library li {
     float: left;
-    margin-right: 24px;
+    margin-right: 5px;
 }
 
 .search-library a {
     font-size: 13px;
     color: #8c97b2;
     text-decoration: none;
+    border-radius: 25px;
+    padding: 6px 12px;
+    border: transparent;
 }
 
 .search-library a:hover {
-    border-bottom: 1px solid #8c97b2;
-}
-
-.search-library li:first-child:hover a {
-    background-color: #7885a5;
-    border-bottom: none;
+    background-color: #8c97b2;
+    color: #fff;
 }
 
 .search-library li:first-child a {
-    background-color: #8c97b2;
-    color: #fff;
-    border-radius: 25px;
-    padding: 6px 12px;
+    border: 1px solid #8c97b2;
 }
 
-form {
+.form {
     position: relative;
 }
 
@@ -470,23 +466,34 @@ form {
     border-radius: 25px;
     outline: none;
     border: 1px solid #c7cddb;
-    padding-left: 18px;
+    padding-left: 17px;
     color: #8c97b2;
 }
 
 .submit-btn {
     position: absolute;
-    right: 16px;
-    top: 20px;
-    width: 13px;
-    height: 13px;
-    background-color: #fff;
+    right: 1px;
+    top: 10px;
+    width: 33px;
+    height: 33px;
     border: none;
-    background-image: url("./images/search-img.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    border-radius: 0 25px 25px 0;
+    background-color: transparent;
     cursor: pointer;
     outline: none;
+    padding-right: 17px;
+}
+
+.icon-search {
+    font-size: 20px;
+    margin-top: -33px;
+    margin-left: auto;
+    color: #8c97b2;
+}
+
+.submit-btn-wrap {
+    width: 30px;
+    height: 30px;
 }
 
 /*shop*/
