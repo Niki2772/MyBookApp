@@ -107,30 +107,42 @@ body {
 }
 
 .wrapper {
-    width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
+    width: calc(100% - 40px);
+    left: auto;
+    right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-wrap {
+    width: calc(100% - 40px);
+    left: auto;
+    right: auto;
+    display: flex;
 }
 
 /*header*/
 
-.line {
+.set {
     height: 45px;
     line-height: 45px;
     font-size: 13px;
     display: flex;
 }
 
-header {
+.header {
     justify-content: space-between;
     border-radius: 3px 3px 0 0;
     background-color: #2f364a;
+    position: fixed;
+    width: 100%;
 }
 
-.brand-name {
+.logo {
     padding-left: 20px;
     color: #78829d;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header-nav {
@@ -153,9 +165,18 @@ header {
 .user {
     color: #fff;
     width: 160px;
-    background-color: #15a4fa;
     display: flex;
     border-radius: 0 3px 0 0;
+}
+
+.user:hover {
+    cursor: pointer;
+    background-color: #15a4fa;
+}
+
+.user:hover .icon-arrow-down {
+    cursor: pointer;
+    color: #15a4fa;
 }
 
 .profile-photo {
@@ -175,20 +196,19 @@ header {
     height: 11px;
     border-radius: 50%;
     background-color: #fff;
-    color: #15a4fa;
+    color: #2f364a;
     font-size: 11px;
     margin-left: 16px;
+    text-align: center;
 }
 
-.icon-arrow-down:hover {
+.header-nav li:hover {
     cursor: pointer;
     background-color: #15a4fa;
-    color: #fff;
 }
 
-.header-nav a:hover {
-    border-bottom: 1px solid #78829d;
-    cursor: pointer;
+.header-nav li:hover a {
+    color: #fff;
 }
 
 /*sidebar*/
@@ -262,6 +282,7 @@ header {
 
 .sidebar-item:last-child {
     border-bottom: none;
+    margin-bottom: 0;
 }
 
 .sidebar-item:first-child {
@@ -312,7 +333,6 @@ header {
     height: 75px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     color: #6f7d95;
     font-size: 12px;
     line-height: 1.5;
@@ -339,7 +359,7 @@ b {
     padding-top: 18px;
 }
 
-footer {
+.footer {
     background-color: #181e2c;
     border-radius: 0 0 3px 3px;
     justify-content: flex-end;
@@ -376,6 +396,7 @@ footer {
 
 .content {
     display: flex;
+    padding-top: 45px;
 }
 
 .filter {
@@ -390,6 +411,7 @@ footer {
 h1 {
     font-size: 22px;
     color: #444c63;
+    padding-left: 24px;
 }
 
 .bg {
@@ -401,11 +423,14 @@ h1 {
     height: 50px;
     border-top: 1px solid #f4f6fa;
     line-height: 50px;
-    display: flex;
 }
 
-.search-library {
-    float: left;
+.search-wrap {
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-library li {
@@ -436,7 +461,6 @@ h1 {
 }
 
 form {
-    float: right;
     position: relative;
 }
 
@@ -447,7 +471,6 @@ form {
     outline: none;
     border: 1px solid #c7cddb;
     padding-left: 18px;
-    box-sizing: border-box;
     color: #8c97b2;
 }
 
@@ -467,20 +490,16 @@ form {
 }
 
 /*shop*/
-.wrapper {
-    width: calc(100% - 40px);
-    left: auto;
-    right: auto;
-}
+
 .book-shop {
     padding-top: 30px;
     overflow-y: scroll;
     height: 780px;
+    padding-left: 20px;
 }
-.book-shop-in {
-    display: flex;
-    justify-content: space-between;
-    width: 1080px;
+
+.book-description {
+    padding-left: 5px;
 }
 
 .book-info {
@@ -488,67 +507,81 @@ form {
     width: 200px;
     margin-right: 25px;
     margin-bottom: 20px;
- 
+    border-radius: 5px;
 }
+
 .book-info:hover {
-    box-shadow: 0px 0px 10px 7px #dadfea;
+    box-shadow: 0px 0px 15px 10px #6f7d95;
     cursor: pointer;
-    background-color: #dadfea;
-    
 }
+
 .name {
     font-size: 16px;
     color: #444c63;
     padding: 17px 0 10px 0;
 }
+
 .author {
     font-size: 12px;
     color: #6f7d95;
     padding-bottom: 14px;
 }
+
 .jq-star-svg {
     height: 13px;
     width: 13px;
 }
+
 .my-rating {
-   display: flex;
-   justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
     height: 13px;
     width: 70px;
     cursor: pointer;
 }
+
 .book-cover {
     height: 275px;
     width: 200px;
     background-repeat: no-repeat;
 }
+
 .book-cover-jewels {
     background-image: url("./images/jewels-of-nizam.png");
-} 
+}
+
 .book-cover-cakes {
     background-image: url("./images/cakes-and-bakes.png");
 }
+
 .book-cover-kitchen {
     background-image: url("./images/jamie\'s-kitchen.png");
 }
+
 .book-cover-italian {
     background-image: url("./images/cook-like-an-italien.png");
 }
-.book-cover-meals{
+
+.book-cover-meals {
     background-image: url("./images/easy-meals.png");
 }
+
 .book-cover-slow-cooking {
     background-image: url("./images/slow-cooking.png");
 }
+
 .book-cover-vegetables {
     background-image: url("./images/vegetables.png");
 }
+
 .book-cover-suneeta {
     background-image: url("./images/indian-cooking.png");
 }
+
 .book-cover-jamie {
     background-image: url("./images/jaimie-does.png");
 }
+
 .book-cover-jamie’s-italy {
     background-image: url("./images/jamie\'s-italy.png");
 }
