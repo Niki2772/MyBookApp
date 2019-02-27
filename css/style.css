@@ -55,6 +55,7 @@ table {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-arrow-down:before {
     content: "\e90a";
 }
@@ -159,35 +160,6 @@ body {
 .header-nav a {
     text-decoration: none;
     color: #78829d;
-}
-
-.user {
-    color: #fff;
-    width: 160px;
-    display: flex;
-    border-radius: 0 3px 0 0;
-}
-
-.user:hover {
-    cursor: pointer;
-    background-color: #15a4fa;
-}
-
-.user:hover .icon-arrow-down {
-    cursor: pointer;
-    color: #15a4fa;
-}
-
-.profile-photo {
-    width: 33px;
-    height: 33px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    margin: 6px 12px;
-    background-image: url('../images/user-avatar.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
 }
 
 .icon-arrow-down {
@@ -488,6 +460,7 @@ h1 {
     margin-top: -33px;
     margin-left: auto;
     color: #8c97b2;
+
 }
 
 .submit-btn-wrap {
@@ -591,3 +564,76 @@ h1 {
 .book-cover-jamie’s-italy {
     background-image: url("../images/jamie\'s-italy.png");
 }
+
+
+/*list*/
+.mainmenubtn {
+    border: none;
+    height: 45px;
+    cursor: pointer;
+    color: #fff;
+    width: 160px;
+    border-radius: 0 3px 0 0;
+    position: relative;
+
+}
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    width: 160px;
+    text-align: center;
+    line-height: 38px;
+    height: 38px;
+    position: absolute;
+    margin-top: 45px;
+}
+.dropdown-child a {
+   border-top: 1px solid #fff;
+    color: #78829d;
+    background-color: #2f364a;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.25s, color 0.15s;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+   position: absolute;
+   
+
+}
+.dropdown-child a:hover {
+    background-color: #15a4fa;
+    color: #fff;
+}
+
+.user-name {
+  float: right;
+padding-right: 22px;
+}
+.mainmenubtn:hover {
+    cursor: pointer;
+    background-color: #15a4fa;
+}
+
+.mainmenubtn:hover .icon-arrow-down {
+   
+    color: #15a4fa;
+}
+
+.profile-photo {
+    width: 33px;
+    height: 33px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-image: url('../images/user-avatar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+position: absolute;
+    top: 5px;
+    left: 12px;
+}
+
